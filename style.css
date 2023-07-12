@@ -10,7 +10,7 @@
   background-color: #ff9a4b;
 }
 
-main {
+.main-container {
   width: 960px;
   margin: 50px auto;
   display: flex;
@@ -28,25 +28,22 @@ main {
   margin-right: 0;
 }
 
-.contents-image1 {
+.contents-image {
   height: 150px;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.image1 {
   background-image: url(img/flow01.png);
-  background-position: bottom;
-  background-size: cover;
 }
 
-.contents-image2 {
-  height: 150px;
+.image2 {
   background-image: url(img/flow02.png);
-  background-position: bottom;
-  background-size: cover;
 }
 
-.contents-image3 {
-  height: 150px;
+.image3 {
   background-image: url(img/flow03.png);
-  background-position: bottom;
-  background-size: cover;
 }
 
 .step {
@@ -68,7 +65,7 @@ main {
 }
 
 @media screen and (max-width:768px) {
-  main {
+  .main-container {
     width: 100%;
     display: block;
   }
@@ -79,8 +76,7 @@ main {
 }
 
 .main-contents:last-child {
-  margin-right: auto;
-  margin-bottom: 0;
+  margin: 0 auto;
 }
 
 }
